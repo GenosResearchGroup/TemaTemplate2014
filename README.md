@@ -1,4 +1,4 @@
-TemaTemplate2014
-================
+Template para submissão de trabalhos aos eventos da TeMA
+--------------------------------------------------------
 
-Template para artigo da Associação Brasileira de Teoria e Análise Musical
+Associação Brasileira de Teoria e Análise Musical
