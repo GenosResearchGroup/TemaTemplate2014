@@ -1,15 +1,15 @@
-% LaTeX definitions for SBC 2001 style
+% LaTeX definitions for TeMA 2014 style
 %
-% Created by Jomi & Rafael, june 2001
+% Created by Marcos, Guilherme e Alexandre, abril de 2014.
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{sbc2003}[2001/06/09]
+\ProvidesPackage{tema2014}[2014/04/18]
 
-% margem sup 3.5 cm: há 1,5 cm para header, + 2 cm para top
-% margem inf 2.5 cm: há 1,5 cm para foot, + 1 cm para bottom
-% margem esq/dir 3 cm
+% superior margin: 3.5cm (1.5 header, 2 top)
+% inferior margin: 2.5cm (1.5 foot, 1 bottom)
+% l/r margin: 3cm
 \RequirePackage[a4paper,top=2cm,left=3cm,right=3cm,bottom=1.5cm]{geometry}
-
+\RequirePackage{kchicago}
 
 \parindent 0.5cm
 \parskip   6pt
@@ -39,10 +39,12 @@
 
 % to avoid [...] in the bibliography
 % \item[] instead of \item[\@biblabel{#1}\hfill]
+
 \def\@lbibitem[#1]#2{\item[]\if@filesw
       {\let\protect\noexpand
        \immediate
        \write\@auxout{\string\bibcite{#2}{#1}}}\fi\ignorespaces}
+
 \renewenvironment{thebibliography}[1]
      {\section*{\refname
         \@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}}%
@@ -140,6 +142,7 @@
 \renewcommand{\maketitle}{\maketitleOLD\thispagestyle{empty}}
 
 \renewenvironment{abstract}{%
+  \vspace{6pt}
       \list{}{%\advance\topsep by0.35cm\relax%\small
       \leftmargin=0.8cm
       \labelwidth=\z@
@@ -158,3 +161,6 @@
       \rightmargin\leftmargin}\item[\hskip\labelsep
                                     \bfseries\itshape Resumo.]\itshape}%
       {\endlist}
+
+\newcommand{\keywords}[1]{\hspace{0.3cm}\textit{\textbf{Keywords}: #1.}\vspace{6pt}}
+\newcommand{\palavraschave}[1]{\hspace{0.3cm}\textit{\textbf{Palavras-chave}: #1}.}

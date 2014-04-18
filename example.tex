@@ -4,7 +4,7 @@
 
 \usepackage{graphicx,url}
 
-%\usepackage[brazil]{babel}
+\usepackage[brazil]{babel}
 \usepackage[utf8]{inputenc}
 
 
@@ -12,13 +12,13 @@
 
 \title{Modelo de documento para as conferências da TeMA}
 
-\author{Marcos da Silva Sampaio\inst{1}}
+\author{Marcos da Silva Sampaio\inst{1}, Guilherme Bertissolo\inst{1}, Alexandre Espinheira\inst{1}}
 
 \address{Grupo de Pesquisa Genos ---
          Escola de Música da Universidade Federal da Bahia \\
          Av. Araújo Pinho, 58 ---
          40110-913 Salvador, BA
-         \email{marcos@sampaio.me}
+         \email{marcos@sampaio.me, guilhermebertissolo@gmail.com, alespinheira@gmail.com}
 }
 
 \begin{document}
@@ -26,19 +26,20 @@
 \maketitle
 
 \begin{abstract}
-  Versão traduzida do resumo.
+  This meta-paper describes the style to be used in paper submission
+  for the conferences of Associação Brasileira de Teoria e Análise
+  Musical (TeMA).
 \end{abstract}
 
+\keywords{Template, TeMA, Music, Conference}
+
 \begin{resumo}
-  Este meta-arquivo descreve o estilo a ser usado na elaboração de
+  Este meta-artigo descreve o estilo a ser usado na elaboração de
   artigos para submissão nas conferências da Associação Brasileira de
-  Teoria e Análise Musical (TeMA). O resumo deverá conter uma
-  introdução, o objetivo do projeto trabalhado, a metodologia, os
-  resultados (parciais ou finais) e apontar as conclusões. O resumo
-  deverá ter, no máximo de 250 palavras, sem parágrafo e sem citações
-  bibliográficas.
+  Teoria e Análise Musical (TeMA).
 \end{resumo}
 
+\palavraschave{Modelo, TeMA, Música, Congresso}
 
 \section{Introdução}
 \label{sec:gen}
@@ -53,41 +54,49 @@ obtido na página da TeMA (http://tema.mus.br).
 \label{sec:tamanho-pagina}
 
 Os anais serão organizados em formato A4 retrato (21.0cm x 29.7cm).
-Todo o conteúdo de cada página deve caber dentro do retângulo de
-17.2cm x 25.2cm, centralizado na página, com margens 2cm (topo), 2.5cm
+Todo o conteúdo de cada página deve caber dentro do retângulo de 17cm
+x 25.2cm, centralizado na página, com margens 2cm (topo), 2.5cm
 (base), 2cm (esquerda/direita). O texto deve estar inteiramente
 justificado, com separação de sílabas.
 
 \section{Fonte}
 \label{sec:fonte}
 
-Todo o texto deverá ter fonte Times. Fontes sem serifa e não
+Todo o texto deverá ter fonte Times, exceto pelas legendas das figuras
+(vide seção~\ref{sec:figuras-e-tabelas}). Fontes sem serifa e não
 proporcional só podem ser usadas com propósitos especiais, como para
 diferenciar texto de código-fonte de programas.
 
 \section{Primeira página}
 
 A primeira página deve conter o título do artigo, o nome e endereço
-dos autores, o abstract em inglês e o resumo em português (nos textos
-em português). O título deve ser centralizado sobre a página, com
-fonte Times em negrito 16pt.
+dos autores, o abstract e \textit{keywords} em inglês e o resumo e
+palavras-chave em português (obrigatório apenas nos textos em
+português). O título deve ser centralizado sobre a página, com fonte
+Times em negrito 16pt. O espaçamento entre \textit{keywords} e resumo
+deve ser de 6pt.
 
-Os nomes dos autores devem estar centralizados, com fonte Times 12pt,
-em negrito, todos dispostos em uma mesma linha, separados por
-vírgulas. Os endereços devem estar centralizados, com fonte Times
-12pt. O abstract deve ter fonte Times itálico 12pt, em itálico, indentado em 0.8cm
-em ambos os lados.
+\subsection{Autores}
+\label{sec:autores}
 
-
-\section{Título e autores}
-
-A fonte do título é Times, 14pt, negrito, caixa alta e centralizada.
 Os nomes dos autores são omitidos na submissão para revisão. Para a
-versão final, os nomes dos autores deverão estar centralizados. O nome
-do autor principal deverá ser o primeiro e o dos co-autores depois,
-separados por vírgulas. Se os endereços dos autores for o mesmo, este
-deve ser inserido apenas uma vez, centralizado. Se os endereços forem
-diferentes, deverão ser espaçados, sob os nomes dos autores.
+versão final, devem estar centralizados, com fonte Times 12pt, em
+negrito, todos dispostos em uma mesma linha, separados por vírgulas.
+Os endereços devem estar centralizados, com fonte Times 12pt. Se o
+endereço dos autores for o mesmo, deve ser inserido apenas uma vez,
+centralizado. Se os endereços forem diferentes, deverão ser espaçados,
+sob os nomes dos autores.
+
+\subsection{Abstract e resumo}
+\label{sec:abstract-e-resumo}
+
+O abstract e o resumo devem ter fonte Times itálico 12pt, em itálico,
+indentado em 0.8cm em ambos os lados.
+
+O resumo deverá conter uma introdução, o objetivo do projeto
+trabalhado, a metodologia, os resultados (parciais ou finais) e
+apontar as conclusões. O resumo deverá ter, no máximo de 250 palavras,
+sem parágrafo e sem citações bibliográficas.
 
 
 \section{Seções e parágrafos}
@@ -103,64 +112,58 @@ ter indentação 0.5cm.
 Os títulos de subseções devem ter fonte Times, negrito, 13pt, e
 alinhamento à esquerda.
 
-% TODO: Copiado do ISMIR. confirmar se irei manter
-% \subsection{Informação sobre Copyright}
-
-% A informação de copyright deve ser incluída exatamente como aparece
-% aqui, no canto inferior esquerdo da página, em fonte Times 8pt.
-
 \subsection{Números de página, cabeçalhos e rodapés}
 
-O texto não deve conter cabeçalhos, rodapés ou números de página em sua submissão.
+As páginas não devem conter cabeçalhos, rodapés ou números de página em sua submissão.
 Estes elementos serão adicionados quando os anais forem
 confeccionados.
 
-% TODO: Seguir com os demais itens
+\subsection{Notas de rodapé}
 
-\section{CD-ROMs and Printed Proceedings}
+As notas de rodapé devem ser identificadas com um número no texto e
+inseridas na base da página em que aparecem\footnote{Este é um exemplo
+  de nota de rodapé.}. As notas devem ter fonte de 8pt e devem ser
+precedidas de linha horizontal de 0.5pt.
 
-In some conferences, the papers are published on CD-ROM while only the
-abstract is published in the Proceedings. In this case, authors are
-invited to prepare two final versions of the paper. One, complete, to
-be distributed in CD and the other, containing only the first page,
-with abstract and ``resumo'' (for papers in Portuguese) for the
-printed version.
+\section{Figuras e tabelas}
+\label{sec:figuras-e-tabelas}
 
-\section{Figures and Captions}
-
-Figures and tables captions should be centered if less than one line
-(Figure~\ref{fig:exampleFig}), otherwise justified and indented by
-0.8cm on both margins. The font must be Helvetica, 10 point, boldface,
-with 6 points of space before and after each caption.
-
-In tables, do not use colored or shaded backgrounds, and avoid thick,
-doubled, or unnecessary framing lines. When reporting empirical data,
-do not use more decimal digits than warranted by their precision and
-reproducibility.
-
+As figuras e tabelas devem ser, preferencialmente, flutuantes,
+ocorrendo no topo da página em que são mencionadas. Figuras e tabelas
+deverão ser enumeradas independentemente e referendadas por seus
+números (por exemplo, figura~\ref{fig:exampleFig}).
 
 \begin{figure}
 \centering
-\includegraphics[width=.5\textwidth]{exampleFig.eps}
-\caption{A typical figure}
+\includegraphics[width=.5\textwidth]{beethoven}
+\caption{Uma figura típica}
 \label{fig:exampleFig}
 \end{figure}
 
+As legendas das figuras e tabelas, se menores que uma linha, devem ser
+centralizadas). Nos outros casos, devem ser justificadas e indentadas
+em 0.8cm em ambos lados. A fonte deve ser Helvetica negrito, de 10pt,
+com 6pt de espaço antes e depois de cada legenda.
 
-\section{Images}
+Nas tabelas, não usar fundo colorido ou sombreado e evitar linhas
+grossas, duplas ou desnecessárias.
 
-All images and illustrations should be in black-and-white, or gray
-tones. The image resolution on paper should be about 600 dpi for
-black-and-white images, and 150--200 dpi for grayscale images. Do not
-include images with excessive resolution, as they may take hours to
-print, without any visible difference in the result.
 
-\section{References}
+\section{Imagens}
 
-Bibliographic references must be unambiguous and uniform. We recommend
-giving the author names references in brackets, e.g. \cite{knuth:89}, \cite{smith:99}.
+Todas as imagens e ilustrações devem estar em preto e branco ou tons
+de cinza. A resolução das imagens deverá ser de até 600 dpi para preto
+e branco e 200 dpi para tons de cinza. Não incluir imagens com
+resolução excessiva.
 
-\bibliographystyle{apalike}
+\section{Referências}
+
+Referências bibliográficas devem ser uniforme, com o sustema Turabian
+autor data. Por exemplo, \cite{kroger04:desenvolvendo},
+\cite{babbitt61:set}\cite{coutinho.ea05:computational},
+\cite{morris87:composition}.
+
+\bibliographystyle{kchicago}
 \bibliography{example}
 
 \end{document}
