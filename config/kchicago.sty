@@ -1,7 +1,7 @@
 %^^A* legal notices
 % \iffalse
 %
-%   This program is part of the Frankenstein bundle for LaTeX.  
+%   This program is part of the Frankenstein bundle for LaTeX.
 %
 %   Copyright 1995-2001 Matt Swift <swift@alum.mit.edu>.
 %
@@ -25,7 +25,7 @@
 %   merchantability or fitness for a particular purpose.  See the
 %   LaTeX Project Public License for more details.
 %
-% \fi  
+% \fi
 %
 %^^A* checks
 %
@@ -68,8 +68,8 @@
 % unfortunately shared only with an early implementation of a \manual-compliant
 % documentation style, \package{achicago} and \bst{achicago}.  FIX: any others?
 % In the future, I hope to make \package{achicago} compatible with the most
-% common 
-% 
+% common
+%
 % have to commit to using this bibstyle-package combination when you write your
 % sources.  This needn't be true, and one day I am going to create a series of
 % mappings from other common bibstyles that are conceptually similar, such as
@@ -99,7 +99,7 @@
 %
 % In the future I hope to document more closely \manual's principles wrt each
 % entry type, the many choices given by \manual.
-% 
+%
 % Untested and indeed hardly testable nature of the subject, with all its many
 % permutations and difficult special bibliographic cases.  Feedback is very
 % welcome, especially with citations from  \manual.
@@ -130,7 +130,7 @@
 %   document is already written, realize that if you change the citation style
 %   to one different than the author had in mind while writing, you may make
 %   reading it more awkward.  Then again, maybe you will improve it.
-%   \item[ease of locating references] 
+%   \item[ease of locating references]
 %
 %   The entry for (Benson et~al. 1980) will appear any number of entries
 %   \emph{after} the entry for (Benson et~al. 1999) when the former was written
@@ -143,11 +143,11 @@
 %   subsequent authors.  This is, in general, very unlikely.
 %
 %   The entry for (Gr\"uber 1990b) may not follow the entry for (Gr\"uber
-%   1990a) immediately.  When (the same) Gr\"uber has authored 
+%   1990a) immediately.  When (the same) Gr\"uber has authored
 %   Any number of entries may intervene, but their
 %   principals will all be exactly Gr\"uber.  Entries will intervene only in
 %   the case when Gr\"uber both authored and edited a work in the same year,
-%   and authored one a work with a later date.  
+%   and authored one a work with a later date.
 % \end{description}
 %
 % \section{Usage}
@@ -211,7 +211,7 @@
 % \todo{See \manualref{16.14} for issues to do with multiple citations.}
 %
 % \section{History}
-% 
+%
 % I wrote this package incorporating \file{chicago\{,a\}.bst} and
 % file{chicago.sty} (v4, 92/8).  By now I've almost totally rewritten it.  It
 % was a great mess because it had been based on \file{newapa.bst} which had
@@ -256,7 +256,7 @@
 % If we're loading this file from a \cs\ProcessDTXFile command (see the
 % \package{compsci} package), then \cs\JusTLoaDInformatioN will be defined;
 % othewise we assume it is not (that's why the FunkY NamE).
-% 
+%
 % If we're loading from \cs\ProcessDTXFile, we want to load the packages listed
 % in \cs\DoXPackageS (needed to typeset the documentation for this file) and
 % then bail out.  Otherwise, we're using this file in a normal way as a
@@ -291,7 +291,7 @@
 %%
 % \AddToCheckSum{17}^^A `dtx-update-checksum' automatically handles this.
 % \AddToCheckSum{7}^^A The half a macrocode env. at the top is missed, however...
-% \AddToCheckSum{10}^^A ... and so are the 5 \defs from the .dtx file 
+% \AddToCheckSum{10}^^A ... and so are the 5 \defs from the .dtx file
 %                   ^^A     that precede it.
 % \IfCitations {%
 %   \AddToCheckSum{2}^^A When \initelyHavECitationS is defined in
@@ -320,8 +320,8 @@
 % parameters.  The default will look good outside all environments, in running
 % text.
 %
-% The second argument is expected to be something defined with \cs\newwork.  
-% 
+% The second argument is expected to be something defined with \cs\newwork.
+%
 % Needs modification to handle the empty optional arg.  Watch interfering with
 % things surrounding macros might have set. \cs\relax's are intentionally left
 % out to let constructions like \cs\csname\lips\cs\endcsname [eh? FIX] work on
@@ -369,7 +369,7 @@
 % FIX:  When the ? is placed there, there are two left parens, one right.
 %
 % We want the remaining macros in this section to be available in their own
-% piece. 
+% piece.
 %
 % \todo{is \cs\PreChunk the only dependence on blkcntrl?  Should make this not
 % necessary if so.}
@@ -399,7 +399,7 @@
 %    \begin{macrocode}
 %\AtEndDocument {%
 %  \bibliographystyle{achicago}%
-%}  
+%}
 %    \end{macrocode}
 %
 % The \bst{achicago} bibliography style will insert some macros that are not
@@ -454,7 +454,7 @@
 % standard one here; What is the point of the \cs\relax?  I ended up removing
 % them before the \cname{ac@begingobble} cases because I had to use the
 % \cs\expandafter.}
-% 
+%
 %    \begin{macrocode}
 \newenvironment{SCannotation} {%
     \ifAnnotate
@@ -554,7 +554,7 @@
 %  \end{macro}
 %  \end{macro}
 %  \end{macro}
-%    
+%
 %  \begin{macro}{\shortcite}
 %  \begin{macro}{\shortciteNP}
 %  \begin{macro}{\shortciteN}
