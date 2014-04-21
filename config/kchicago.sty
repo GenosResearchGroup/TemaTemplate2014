@@ -666,14 +666,14 @@
 %    \begin{macrocode}
 \newcommand\ac@defbib [2] {%
   \renewenvironment*{thebibliography} [1] {%
-      #1*{#2\@mkboth{#2}{#2}}%
+    #1*{#2\@mkboth{#2}{#2}}%
       \list{}{%
-                          \leftmargin\z@
-                          \advance\leftmargin\labelsep
-                          \advance\leftmargin\bibindent
-                          \itemindent -\bibindent
-                          \listparindent \itemindent
-                          \parsep \z@}%
+        \leftmargin\z@
+        % \advance\leftmargin\labelsep % remove left space
+        \advance\leftmargin\bibindent
+        \itemindent -\bibindent
+        \listparindent \itemindent
+        \parsep \z@}%
 %    \end{macrocode}
 % \manual does not acknowledge different spacings after different marks of
 % punctuation, distinguish interword from intersentence space, or give rules
