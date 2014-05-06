@@ -1,5 +1,5 @@
-NAME = example
-TEXSRCS = $(NAME).tex example.bib
+NAME = template
+TEXSRCS = $(NAME).tex references.bib
 USE_PDFLATEX = 1
 LATEX_ENV+=TEXINPUTS=.:tex:config:figs:
 LATEX_ENV+=BIBINPUTS=.:
